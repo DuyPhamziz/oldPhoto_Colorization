@@ -18,7 +18,7 @@ for filename in os.listdir(GRAY_DIR):
     blur = cv2.GaussianBlur(img, (3,3), 0)
     #phat hien bien bang canny
     edges = cv2.Canny(blur, threshold1=50, threshold2=150)
-    #luu anh bien 
+    #Luu anh bien 
     save_path = os.path.join(EDGE_DIR, filename)
     cv2.imwrite(save_path, edges)
     
