@@ -5,7 +5,7 @@ GRAY_DIR = "datasets/landscape Images/gray"
 EDGE_DIR = "datasets/landscape Images/edges"
 os.makedirs(EDGE_DIR, exist_ok=True)
 
-#duyet qua toan bo anh trong thu muc
+#Duyet qua toan bo anh trong thu muc
 for filename in os.listdir(GRAY_DIR):
     if filename.lower().endswith(('.jpg', '.jpeg', '.png')):
         path = os.path.join(GRAY_DIR, filename)
